@@ -1,0 +1,17 @@
+At each round game selects a random number from 19-120 and displays it for user as target number.
+
+At each round game assigns a random value from 1-12 to each of the four gems that the player can select, these values are hidden from user.
+
+User can click the four gems and will see their point total for the round going up, as that value starts at 0 and is displayed to user.
+
+If user point total for the round meets the target number then user achieves a win and game resets.
+
+If user point total exceeds the target number for the round then the user loses and game resets.
+
+Upon reset, a new value is assigned to the target number, all four gems, and the user score is set back to 0. Win/Loss counter also updates.
+
+For on screen display, user can see target number, their current score, current wins, current losses, and the images of the four gems.
+
+will need to make an on click for each of the four gems, tied to a variable that is set to random at each round. 
+
+how to reset game? cannot use refresh as win/loss counters need to persist. I am thinking that I could use a function for assigning each random value, or just one function called reset that runs when page loads. Reset function can assign a random number to the target number and update textContent, and also assign random numbers to each gem variable, and also update the textcontent for current win/loss and user score. Then the main functionality of the game can exist within the on.click block of code, so that on each click the game evaluates the variable of the gem clicked and updates text content for user score, at that point if user score === target score user wins and reset is run again, else if user score > target score then user loses and reset is run, else the user score is just updated and game continues without a reset so all the necessary values stay intact for the round. Reset will only be run on page load to assign inital values and on those first two conditionals of win or loss of game. EZ.
