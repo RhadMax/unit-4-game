@@ -50,20 +50,20 @@ h3 {
     font-weight: bolder;
     color: black;
     text-shadow:
-    -2px -2px 0 rgb(54, 163, 60),
-    1px -1px 0 rgb(54, 163, 60),
-    -1px 1px 0 rgb(54, 163, 60),
-    2px 2px 0 rgb(54, 163, 60);
+    -1px -1px 0 rgb(96, 224, 214),
+    1px -1px 0 rgb(96, 224, 214),
+    -1px 1px 0 rgb(96, 224, 214),
+    1px 1px 0 rgb(96, 224, 214);
 }
 h4 {
     z-index: 150;
     font-family: 'Permanent Marker', cursive;
     color: black;
     text-shadow:
-    -2px -2px 0 rgb(54, 163, 60),
-    1px -1px 0 rgb(54, 163, 60),
-    -1px 1px 0 rgb(54, 163, 60),
-    2px 2px 0 rgb(54, 163, 60);
+    -1px -1px 0 rgb(96, 224, 214),
+    .5px -.5px 0 rgb(96, 224, 214),
+    -1px 1px 0 rgb(96, 224, 214),
+    .5px .5px 0 rgb(96, 224, 214);
 }
 h6 {
     padding: 5px;
@@ -119,7 +119,7 @@ img {
     width: 50%;
     margin: 0 auto;
     border-radius: 25px;
-    background-color:rgb(54, 163, 60);
+    background-color:rgb(96, 224, 214);
     
 }
 .spacing {
