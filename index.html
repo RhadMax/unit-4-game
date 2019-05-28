@@ -31,21 +31,28 @@
                 the
                 rules!</h6>
         </div>
+        <br>
+        <div class="rules">
+                <h4 class="text-center textshow">The way it works is simple!</h4>
+                <h4 class="text-center textshow">At the start of each game the dealer picks a number and also assigns a new value to each suit. </h4>
+                <h4 class="text-center textshow">Your goal is to click on the suits to add to your score. Match your score to exactly the same as the dealer's number to win!</h4>
+                <h4 class="text-center textshow">If you go over the dealer's number, you bust! You can also choose the lucky button to add the value of one of the suits chosen at random, multiplied by 5. Careful, this is a quick way to end a game... for better or for worse!</h4>
+            </div>
     </div>
     <div class="container">
         <div class="row">
             <div class=col-sm-1></div>
             <div class=col-sm-4>
                 <div class="card">
-                    <h3 class="card-header text-center">Select Gem!</h3>
+                    <h3 class="card-header text-center">Select Gem:</h3>
                     <div class="row">
                         <!-- <div class=col-sm-1></div> -->
                         <div class="col-sm-5 img-align1 spacing">
-                            <button class="buttons btn" value="diamond"></button>
+                            <button class="buttons btn d-hide" value="diamond"></button>
                             <img src="assets/images/diamond.jpg" class="gems" value="diamond">
                         </div>
                         <div class="col-sm-5 img-align2 spacing">
-                            <button class="buttons btn" value="spade"></button>
+                            <button class="buttons btn s-hide" value="spade"></button>
                             <img src="assets/images/spade.jpg" class="gems" value="spade">
                         </div>
                         <!-- <div class=col-sm-1></div> -->
@@ -55,12 +62,12 @@
                         <!-- <div class=col-sm-1></div> -->
                         <div class="col-sm-5 img-align1 spacing">
 
-                            <button class="buttons btn" value="club"></button>
+                            <button class="buttons btn c-hide" value="club"></button>
                             <img src="assets/images/club.jpg" class="gems" value="club">
                         </div>
                         <div class="col-sm-5 img-align2 spacing">
-                                <button class="buttons btn" value="heart"></button>
-                                <img src="assets/images/heart.jpg" class="gems" value="heart">
+                            <button class="buttons btn h-hide" value="heart"></button>
+                            <img src="assets/images/heart.jpg" class="gems" value="heart">
                         </div>
                         <!-- <div class=col-sm-1></div> -->
                     </div>
@@ -72,12 +79,33 @@
             <div class=col-sm-1></div>
             <div class=col-sm-5>
                 <div class="card">
-
+                    <br>
+                    <div class= "backdrops4">
+                        <h3 class="card-header text-center">Dealer Picked: <span id="dealers">0</span></h3>
+                    </div>
+                    <br>
+                    <div class= "backdrops4">
+                        <h3 class="card-header text-center">Your Score: <span id="scored">0</span></h3>
+                    </div>
+                    <br>
+                    <div class= "backdrops4">
+                        <h3 class="card-header text-center">Games Won: <span id="win">0</span></h3>
+                    </div>
+                    <br>
+                    <div class= "backdrops4">
+                        <h3 class="card-header text-center">Games Lost: <span id="loss">0</span></h3>
+                    </div>
+                    <br><br>
+                    <button class= "lucky" id="resetter">Give up! Reset all stats.</button>
+                    <br>
                 </div>
             </div>
             <div class=col-sm-1></div>
         </div>
     </div>
+    <br>
+    <h6 class="text-center">This game is best viewed at desktop resolutions. If you would rather play it on a mobile device, please <a href="https://www.youtube.com/watch?v=DksSPZTZES0"> Click Here</a></h6>
+    
 
     <script src="assets/javascript/game.js"></script>
 </body>

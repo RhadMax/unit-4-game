@@ -6,16 +6,24 @@ body {
     background-color: rgb(58, 58, 58);
 }
 .jumbotron {
+    position: relative;
+    z-index: 150;
     height: 250px;
     background-image: url(../images/crystal-cards.jpg);
     background-blend-mode: soft-light;
     background-blend-mode: darken;
 }
-.backdrops1, .backdrops2, .backdrops3 {
+.backdrops1, .backdrops2, .backdrops3, .rules{
     background-color: rgb(21, 88, 187);
     width: 420px;
     margin: 0 auto;
     border-radius: 50px;
+}
+.rules {
+    display: none;
+    padding: 25px;
+    z-index: 150;
+
 }
 .backdrops1 {
     width: 450px;
@@ -23,10 +31,19 @@ body {
 .backdrops2 {
     width: 600px;
 }
+.backdrops4 {
+    border-radius: 50px;
+    background-color: rgba(245, 245, 245, 0.726);
+}
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
     color: white;
+    text-shadow:
+    -2px -2px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    2px 2px 0 black;
 }
 h3 {
     font-family: 'Permanent Marker', cursive;
@@ -39,12 +56,22 @@ h3 {
     2px 2px 0 aquamarine;
 }
 h4 {
+    z-index: 150;
     font-family: 'Permanent Marker', cursive;
-    color:whitesmoke;
+    color: rgb(61, 61, 61);
+    text-shadow:
+    -2px -2px 0 aquamarine,
+    1px -1px 0 aquamarine,
+    -1px 1px 0 aquamarine,
+    2px 2px 0 aquamarine;
 }
 h6 {
     padding: 5px;
     color:grey;
+}
+.center {
+    margin: 0 auto;
+    position: absolute;
 }
 img {
     margin: 0 auto 0 auto;
@@ -55,6 +82,8 @@ img {
     width: 150px;
 }
 .card {
+    position: relative;
+    z-index: 101;
     border-radius: 35px;
     background-image: url(../images/gembg2.jpg);
     background-size: 100%;
@@ -67,16 +96,19 @@ img {
     padding-left: 0px;
     padding-right: 15px;
 }
-
 .gems {
     /* position: absolute; */
     z-index: 99;
 }
+.c-hide, .d-hide, .h-hide, .s-hide {
+    opacity: 0;
+}
 .buttons {
+    border-radius: 15px;
     background-color: blue;
-    opacity: .02;
-    height: 100%;
-    width: 100%;
+    /* opacity: .02; */
+    height: 150px;
+    width: 150px;
     position: absolute;
     z-index: 100;
     /* opacity: .1; */
@@ -91,4 +123,7 @@ img {
 }
 .spacing {
     margin: 0 auto;
+}
+#dealers, #scored, #win, #loss {
+    font-size: 37px;
 }
