@@ -8,7 +8,7 @@ var club = 0;
 var target = 0;
 var score = 0;
 
-//reset function
+//reset function ---
 function reset() {
     target = (Math.floor(Math.random() * 102)) + 19;
     console.log(target);
@@ -26,5 +26,21 @@ function reset() {
 
 reset();
 
+//on click of reset button if user wants to start over fresh. Includes a confirm popup window that checks for true so user can confirm they want to start over and reset win/loss counters.
+
+$("#resetter").on("click", function() {
+ var areYouSure = confirm("Are you sure you want to start over? Your recorded wins and losses will be set back to 0.")
+ if (areYouSure) {
+     reset();
+     wins = 0;
+     losses = 0;
+ }
+});
+
 //on click block for gameplay
+
+$(".btn").on("click", function() {
+console.log($(this).val());
+});
+
 

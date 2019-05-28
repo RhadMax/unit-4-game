@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystalline Blackjack</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
 
-    <script src= "assets/javascript/game.js"></script>
+<body>
+    <!-- All gem buttons will have class="gems" and it would be fun to include a button for reset game and also a button under gems that says "I'm Feeling Lucky" that picks a gem at random for the user. To enhance gameplay we could add a sound clip whenever a gem is selected and also make the image for the gem either phase opacity in and out or maybe just have all gem images opacity a little low as a baseline and then if a gem is pressed its' opacity animates to 1 briefly. reset button can be its own onclick call to just run reset but lucky button would also be of class gems so it fits within the same gameplay block of script-->
+
+    <!--Gem buttons will need values tied into their html elements to ID which is which. should be able to just match that to the variable name-->
+
+    <div class="jumbotron">
+        <div class="backdrops1">
+            <h4 class="text-center textshow">Welcome... and now, let's play some</h4>
+        </div>
+        <div class="backdrops2">
+            <h1 class="text-center textshow">Crystalline Blackjack!</h1>
+        </div>
+        <div class="backdrops3">
+            <h6 class="text-center textshow">New to the game? Hover your mouse <span class="underlined">here</span> for
+                the
+                rules!</h6>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class=col-sm-1></div>
+            <div class=col-sm-4>
+                <div class="card">
+                    <h3 class="card-header text-center">Select Gem!</h3>
+                    <div class="row">
+                        <!-- <div class=col-sm-1></div> -->
+                        <div class="col-sm-5 img-align1 spacing">
+                            <button class="buttons btn" value="diamond"></button>
+                            <img src="assets/images/diamond.jpg" class="gems" value="diamond">
+                        </div>
+                        <div class="col-sm-5 img-align2 spacing">
+                            <button class="buttons btn" value="spade"></button>
+                            <img src="assets/images/spade.jpg" class="gems" value="spade">
+                        </div>
+                        <!-- <div class=col-sm-1></div> -->
+                    </div>
+                    <br>
+                    <div class="row">
+                        <!-- <div class=col-sm-1></div> -->
+                        <div class="col-sm-5 img-align1 spacing">
+
+                            <button class="buttons btn" value="club"></button>
+                            <img src="assets/images/club.jpg" class="gems" value="club">
+                        </div>
+                        <div class="col-sm-5 img-align2 spacing">
+                                <button class="buttons btn" value="heart"></button>
+                                <img src="assets/images/heart.jpg" class="gems" value="heart">
+                        </div>
+                        <!-- <div class=col-sm-1></div> -->
+                    </div>
+                    <br>
+                    <button class="btn lucky" value="luck">I'm Feeling Lucky!</button>
+                    <br>
+                </div>
+            </div>
+            <div class=col-sm-1></div>
+            <div class=col-sm-5>
+                <div class="card">
+
+                </div>
+            </div>
+            <div class=col-sm-1></div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
