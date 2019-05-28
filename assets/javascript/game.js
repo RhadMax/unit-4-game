@@ -101,6 +101,7 @@ $(".btn").on("click", function () {
         dHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
         console.log("score: " + score);
+    }
     if (score === target) {
         wins++;
         reset();
