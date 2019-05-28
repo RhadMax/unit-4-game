@@ -12,6 +12,7 @@ var sHide = $(".s-hide");
 var cHide = $(".c-hide");
 var hHide = $(".h-hide");
 var rules = $(".rules"); 
+var luckyChoice = []
 
 //mouseover rules to display
 $(".underlined").hover(function () {
@@ -23,7 +24,7 @@ $(".underlined").hover(function () {
 function reset() {
     score = 0;
     target = (Math.floor(Math.random() * 102)) + 19;
-    console.log(target);
+    // console.log(target);
     diamond = (Math.floor(Math.random() * 12)) + 1;
     console.log("diamond: " + diamond);
     spade = (Math.floor(Math.random() * 12)) + 1;
@@ -56,41 +57,48 @@ $("#resetter").on("click", function () {
 });
 
 //on click block for gameplay
-console.log("target: " + target);
-console.log("score: " + score);
+// console.log("target: " + target);
+// console.log("score: " + score);
 
-$(".btn").on("click", function () {
-    console.log($(this).val());
+$(".starter").on("click", function () {
+    // console.log($(this).val());
     if ($(this).val() === "diamond") {
         score += diamond
         dHide.animate({ opacity: .5 }, 100);
         dHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
-        console.log("score: " + score);
+        // console.log("score: " + score);
     }
     if ($(this).val() === "spade") {
         score += spade
         sHide.animate({ opacity: .5 }, 100);
         sHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
-        console.log("score: " + score);
+        // console.log("score: " + score);
     }
     if ($(this).val() === "club") {
         score += club
         cHide.animate({ opacity: .5 }, 100);
         cHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
-        console.log("score: " + score);
+        // console.log("score: " + score);
     }
     if ($(this).val() === "heart") {
         score += heart
         hHide.animate({ opacity: .5 }, 100);
         hHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
-        console.log("score: " + score);
+        // console.log("score: " + score);
     }
     if ($(this).val() === "luck") {
-        score += heart
+        luckyChoice[0] = diamond;
+        luckyChoice[1] = spade;
+        luckyChoice[2] = club;
+        luckyChoice[3] = heart;
+        var luckyAdder = parseInt(luckyChoice[Math.floor(Math.random() * 4)])
+        luckyAdder = luckyAdder*5;
+        console.log("luckyadder = " + luckyAdder);
+        score += luckyAdder;
         hHide.animate({ opacity: .5 }, 100);
         hHide.animate({ opacity: 0 }, 100);
         cHide.animate({ opacity: .5 }, 100);
@@ -100,7 +108,7 @@ $(".btn").on("click", function () {
         dHide.animate({ opacity: .5 }, 100);
         dHide.animate({ opacity: 0 }, 100);
         $("#scored").text(score);
-        console.log("score: " + score);
+        // console.log("score: " + score);
     }
     if (score === target) {
         wins++;

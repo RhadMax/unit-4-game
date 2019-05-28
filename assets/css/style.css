@@ -50,20 +50,20 @@ h3 {
     font-weight: bolder;
     color: rgb(61, 61, 61);
     text-shadow:
-    -2px -2px 0 aquamarine,
-    1px -1px 0 aquamarine,
-    -1px 1px 0 aquamarine,
-    2px 2px 0 aquamarine;
+    -2px -2px 0 rgba(93, 211, 172, 0.753),
+    1px -1px 0 rgba(93, 211, 172, 0.753),
+    -1px 1px 0 rgba(93, 211, 172, 0.753),
+    2px 2px 0 rgba(93, 211, 172, 0.753);
 }
 h4 {
     z-index: 150;
     font-family: 'Permanent Marker', cursive;
     color: rgb(61, 61, 61);
     text-shadow:
-    -2px -2px 0 aquamarine,
-    1px -1px 0 aquamarine,
-    -1px 1px 0 aquamarine,
-    2px 2px 0 aquamarine;
+    -2px -2px 0 rgba(93, 211, 172, 0.753),
+    1px -1px 0 rgba(93, 211, 172, 0.753),
+    -1px 1px 0 rgba(93, 211, 172, 0.753),
+    2px 2px 0 rgba(93, 211, 172, 0.753);
 }
 h6 {
     padding: 5px;
@@ -119,11 +119,12 @@ img {
     width: 50%;
     margin: 0 auto;
     border-radius: 25px;
-    background-color: aquamarine
+    background-color: rgb(33, 141, 105)
+    
 }
 .spacing {
     margin: 0 auto;
 }
 #dealers, #scored, #win, #loss {
-    font-size: 37px;
+    font-size: 35px;
 }
