@@ -4,4 +4,4 @@ This unit-4 assignment for homework as assigned by the UCSD Extension Coding Boo
 
 I decided to add the functionality of an additional "feeling lucky" button to give myself a small extra challenge and also to make gameplay slightly more interesting for the user if they chose. I relied on bootstrap for layout quite a bit for this assignment and found the bulk of the task to be exposure to targeting elements and displaying elements at the correct time within the script.
 
-To view this application on github pages please use this link: RhadMax.github.io/unit-4-game
+To view this application on github pages please use this link: https://rhadmax.github.io/unit-4-game/
